@@ -1,0 +1,153 @@
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+  background-color: #333
+
+li
+  float: left
+  a
+    display: inline-block
+    color: white
+    text-align: center
+    padding: 14px 16px
+    text-decoration: none
+
+.dropbtn
+  display: inline-block
+  color: white
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+
+li a:hover, .dropdown:hover .dropbtn
+  background-color: pink
+
+li.dropdown
+  display: inline-block
+
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: #ECCEF5
+  min-width: 160px
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+  z-index: 1
+  a
+    color: black
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+    text-align: left
+    &:hover
+      background-color: #f1f1f1
+
+.dropdown:hover .dropdown-content
+  display: block
+
+img
+  float: right
+  height: 131px
+  width: 208px
+
+.floating-box
+  float: left
+  width: 350px
+  height: 200px
+  margin: 10px
+  border: 3px solid #ECCEF5
+
+.floating-box-inline
+  display: inline-block
+  width: 350px
+  height: 200px
+  margin: 10px
+  border: 3px solid pink
+
+table
+  border-collapse: separate
+  width: 100%
+  border: 1px solid black
+  display: table
+  table-layout: auto
+
+tr
+  display: table-row
+
+td
+  display: table-cell
+  border: solid
+
+.flex-container
+  display: flex
+  height: 220px
+  flex-wrap: nowrap
+  align-content: space-between
+  background-color: DodgerBlue
+  > div
+    background-color: #ECCEF5
+    width: 100px
+    margin: 10px
+    text-align: center
+    line-height: 75px
+    font-size: 30px
+
+input[type=text], select
+  width: 100%
+  padding: 12px 20px
+  margin: 8px 0
+  display: inline-block
+  border: 1px solid #ccc
+  border-radius: 4px
+  box-sizing: border-box
+
+input[type=submit]
+  width: 100%
+  background-color: #4CAF50
+  color: white
+  padding: 14px 20px
+  margin: 8px 0
+  border: none
+  border-radius: 4px
+  cursor: pointer
+  &:hover
+    background-color: #45a049
+
+.form-desighn
+  border-radius: 50px
+  background-color: #f2f2f2
+  padding: 20px
+
+@keyframes example
+  0%
+    left: 0px
+    top: 0px
+
+  25%
+    left: 500px
+    top: 0px
+
+  50%
+    left: 500px
+    top: 200px
+
+  75%
+    left: 0px
+    top: 200px
+
+  100%
+    left: 0px
+    top: 0px
+
+
+.reklama
+  width: 500px
+  height: 100px
+  position: relative
+  -webkit-animation-name: example
+  /* Safari 4.0 - 8.0
+  -webkit-animation-duration: 8s
+  /* Safari 4.0 - 8.0
+  animation-name: example
+  animation-duration: 8s
